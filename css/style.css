@@ -1,0 +1,294 @@
+/* ------------------------*/ /* ---------->>> GLOBAL <<<-----------*/ /* ------------------------*/
+
+/* CSS Variables */
+:root {
+    --amazon: #ff9900;
+    --calendar: #4285f4;
+    --drive: #34a853;
+    --github: #6cc644;
+    --gmail: #ea4335;
+    --twitter: #1da1f2;
+    --youtube: #ff0000;
+
+    --facebook: #3b5998;
+    --linkedin: #0077b5;
+    --plex: #e5a00d;
+    --reddit: #ff4500;
+    --slack: #e01563;
+    --spotify: #1db954;
+    --steam: #00adee;
+    --xbox: #52b043;
+    --pinterest: #bd081c;
+}
+/* 
+OFFICIAL COLORS
+
+Alphabet: #ed1c24
+Amazon: #ff9900, #146eb4
+Android: #a4c639
+Dropbox: #007ee5, #7b8994, #47525d, #3d464d
+Facebook: #3b5998
+GitHub: #4078c0, #6cc644, #bd2c00, #c9510c, #6e5494, #fafafa, #f5f5f5, #333
+GoDaddy: #7db701, #ff8a00
+Google: #4285f4, #34a853, #fbbc05, #ea4335
+HackerNews: #ff4000
+Hulu: #66aa33, #99cc33, #41811e, #222222, #666666, #e8e8e8
+IFTTT: #33ccff, #ff4400, #000000
+Indeed: #2164f4, #ff6600
+LinkedIn; #0077b5, #000000, #313335, #86888a, #caccce, #00a0dc, #8d6cab, #dd5143, #e68523
+Messenger: #0084ff
+Microsoft: #f65314, #7cbb00, #00a1f1, #ffbb00
+Netflix: #e50914, #221f1f, #f5f5f1
+NVIDIA: #76b900
+PayPal: #003087, #009cde, #012169
+PHP: #8892be, #4f5b93, #99cc99
+Pinterest: #bd081c
+Plex: #e5a00d, #282a2d
+Python: #ffde57, #4584b6, #646464
+Raspberry Pi: #c7053d, #8cc04b
+Reddit: #ff4500, #5f99cf, #cee3f8
+Slack: #6ecadc, #e9a820, #e01563, #3eb991
+Snapchat; #fffc00
+Spotify: #1db954, #191414
+Stack Overflow: #f48024, #222426, #bcbbbb
+Steam: #00adee, #000000
+Twitch: #6441a5, #b9a3e3, #262626, #f1f1f1
+Twitter: #1da1f2, #14171a, #657786, #aab8c2, #e1e8ed, #f5f8fa
+Windows: #0078d7, #002050, #ffb900, #d83b01, #e81123, #b4009e, #5c2d91, #008272, #107c10
+WordPress: #21759b, #d54e21, #464646
+XBOX: #52b043
+YouTube: #ff0000, #282828
+
+*/
+
+*, *:before, *:after {-webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;}
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+html {font-size: 100%;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;}
+body {
+    font: 14px/24px Roboto, Arial, Helvetica, sans-serif;
+    background-color: rgba(38, 40, 49, 1);
+    text-align: center;
+    color: #636363;
+}
+
+p, h1, h2, h3, h4, h5, h6, form, table, hr, pre, blockquote {margin: 0 0 20px;}
+h1 {font-size: 36px;}
+h2 {color: #000;font: italic 36px/38px Roboto, Arial, Helvetica, sans-serif;margin: 0 0 15px;}
+h3 {font-size: 24px;}
+h4 {font-size: 18px;}
+h5 {font-size: 14px;}
+h6 {font-size: 12px;}
+ul, ol, dl, menu {margin: 0 0 20px;}
+
+a {text-decoration: none;color: #ed1b2e;}
+    a:focus {outline: thin dotted;}
+    a:active, a:hover {text-decoration: underline;}
+#header {
+    position: sticky;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    background-color: rgba(0, 204, 0, 0.75);
+    padding: 5px;
+    margin: 0px 0px 8px 0px;
+}
+#header-logo img {
+    width: 100%;
+    height: 100%;
+    max-width: 320px;
+    max-height: 55px;
+}		
+.row {
+    margin: 6px auto;
+    border: 0px solid black;
+    background-color: white;
+}
+.row:nth-child(even) {
+    background: rgba(0, 0, 0, 0.025);
+}
+.row-label {
+    margin-bottom: 5px;
+}
+.column {
+    display: inline-block;
+    padding: 2px 4px;
+    font-size: 18px;
+}
+.column-label {
+    border-bottom: 1px solid black;			
+    padding-left: 6px;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: left;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.25);
+}
+.form-row {
+    display: grid;
+    margin: 8px 12px;
+    grid-column: 1 / 2;
+}		
+label {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    width: 100px;
+} 
+input, button {
+    grid-column: 2 / 3;	
+}
+#searchbar {
+    display: block;
+    right: 25px;
+}
+#searchterm {
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.75);
+}
+#searchbutton {
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.75);
+    background-color: gainsboro;
+}
+
+/*  */
+#tile-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start; 
+    align-items: flex-start;
+    align-content: space-around;
+    padding: 20px 10px;
+}
+.tile {
+    height: 150px;
+    width: 175px;   
+    padding: 8px;
+    margin: 5px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    background-color: rgba(255, 255, 255, .045);
+}
+.tile:hover {
+    background-color: rgba(255, 255, 255, .05);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, .75);
+}
+.tile a:focus {
+    outline: thin dotted;
+}
+.tile a:active, a:hover {
+    text-decoration: none;
+}
+.tile-content {
+    font-size: 12px;
+    text-align: left;
+    color: #fff;
+}
+.tile-content b {
+    font-size: 26px;
+    display: block;
+}
+
+#amazon {
+    border-bottom: 5px solid var(--amazon);
+}
+#amazon:hover {
+    border-bottom: 2px solid var(--amazon);
+}
+#calendar {
+    border-bottom: 5px solid var(--calendar);
+}
+#calendar:hover {
+    border-bottom: 2px solid var(--calendar);
+}
+#drive {
+    border-bottom: 5px solid var(--drive);
+}
+#drive:hover {
+    border-bottom: 2px solid var(--drive);
+}
+#github {
+    border-bottom: 5px solid var(--github);
+}
+#github:hover {
+    border-bottom: 2px solid var(--github);
+}
+#gmail {
+    border-bottom: 5px solid var(--gmail);
+}
+#gmail:hover {
+    border-bottom: 2px solid var(--gmail);
+}
+#twitter {
+    border-bottom: 5px solid var(--twitter);
+}
+#twitter:hover {
+    border-bottom: 2px solid var(--twitter);
+}
+#youtube {
+    border-bottom: 5px solid var(--youtube);
+}
+#youtube:hover {
+    border-bottom: 2px solid var(--youtube);
+}
+
+#facebook {
+    border-bottom: 5px solid var(--facebook);
+}
+#facebook:hover {
+    border-bottom: 2px solid var(--facebook);
+}
+#linkedin {
+    border-bottom: 5px solid var(--linkedin);
+}
+#linkedin:hover {
+    border-bottom: 2px solid var(--linkedin);
+}
+#plex {
+    border-bottom: 5px solid var(--plex);
+}
+#plex:hover {
+    border-bottom: 2px solid var(--plex);
+}
+#reddit {
+    border-bottom: 5px solid var(--reddit);
+}
+#reddit:hover {
+    border-bottom: 2px solid var(--reddit);
+}
+#slack {
+    border-bottom: 5px solid var(--slack);
+}
+#slack:hover {
+    border-bottom: 2px solid var(--slack);
+}
+#spotify {
+    border-bottom: 5px solid var(--spotify);
+}
+#spotify:hover {
+    border-bottom: 2px solid var(--spotify);
+}
+#steam {
+    border-bottom: 5px solid var(--steam);
+}
+#steam:hover {
+    border-bottom: 2px solid var(--steam);
+}
+#xbox {
+    border-bottom: 5px solid var(--xbox);
+}
+#xbox:hover {
+    border-bottom: 2px solid var(--xbox);
+}
+#pinterest {
+    border-bottom: 5px solid var(--pinterest);
+}
+#pinterest:hover {
+    border-bottom: 2px solid var(--pinterest);
+}
