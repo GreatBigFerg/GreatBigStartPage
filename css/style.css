@@ -196,99 +196,225 @@ input, button {
 }
 
 #amazon {
-    border-bottom: 5px solid var(--amazon);
+    border-bottom: 6px solid var(--amazon);
 }
 #amazon:hover {
     border-bottom: 2px solid var(--amazon);
 }
 #calendar {
-    border-bottom: 5px solid var(--calendar);
+    border-bottom: 6px solid var(--calendar);
 }
 #calendar:hover {
     border-bottom: 2px solid var(--calendar);
 }
 #drive {
-    border-bottom: 5px solid var(--drive);
+    border-bottom: 6px solid var(--drive);
 }
 #drive:hover {
     border-bottom: 2px solid var(--drive);
 }
 #github {
-    border-bottom: 5px solid var(--github);
+    border-bottom: 6px solid var(--github);
 }
 #github:hover {
     border-bottom: 2px solid var(--github);
 }
 #gmail {
-    border-bottom: 5px solid var(--gmail);
+    border-bottom: 6px solid var(--gmail);
 }
 #gmail:hover {
     border-bottom: 2px solid var(--gmail);
 }
 #twitter {
-    border-bottom: 5px solid var(--twitter);
+    border-bottom: 6px solid var(--twitter);
 }
 #twitter:hover {
     border-bottom: 2px solid var(--twitter);
 }
 #youtube {
-    border-bottom: 5px solid var(--youtube);
+    border-bottom: 6px solid var(--youtube);
 }
 #youtube:hover {
     border-bottom: 2px solid var(--youtube);
 }
 
 #facebook {
-    border-bottom: 5px solid var(--facebook);
+    border-bottom: 6px solid var(--facebook);
 }
 #facebook:hover {
     border-bottom: 2px solid var(--facebook);
 }
 #linkedin {
-    border-bottom: 5px solid var(--linkedin);
+    border-bottom: 6px solid var(--linkedin);
 }
 #linkedin:hover {
     border-bottom: 2px solid var(--linkedin);
 }
 #plex {
-    border-bottom: 5px solid var(--plex);
+    border-bottom: 6px solid var(--plex);
 }
 #plex:hover {
     border-bottom: 2px solid var(--plex);
 }
 #reddit {
-    border-bottom: 5px solid var(--reddit);
+    border-bottom: 6px solid var(--reddit);
 }
 #reddit:hover {
     border-bottom: 2px solid var(--reddit);
 }
 #slack {
-    border-bottom: 5px solid var(--slack);
+    border-bottom: 6px solid var(--slack);
 }
 #slack:hover {
     border-bottom: 2px solid var(--slack);
 }
 #spotify {
-    border-bottom: 5px solid var(--spotify);
+    border-bottom: 6px solid var(--spotify);
 }
 #spotify:hover {
     border-bottom: 2px solid var(--spotify);
 }
 #steam {
-    border-bottom: 5px solid var(--steam);
+    border-bottom: 6px solid var(--steam);
 }
 #steam:hover {
     border-bottom: 2px solid var(--steam);
 }
 #xbox {
-    border-bottom: 5px solid var(--xbox);
+    border-bottom: 6px solid var(--xbox);
 }
 #xbox:hover {
     border-bottom: 2px solid var(--xbox);
 }
 #pinterest {
-    border-bottom: 5px solid var(--pinterest);
+    border-bottom: 6px solid var(--pinterest);
 }
 #pinterest:hover {
     border-bottom: 2px solid var(--pinterest);
 }
+
+
+#github {
+    border-bottom: 6px solid var(--github);
+}
+#github:hover {
+    border-bottom: 2px solid var(--github);
+}
+#gmail {
+    border-bottom: 6px solid var(--gmail);
+}
+#gmail:hover {
+    border-bottom: 2px solid var(--gmail);
+}
+#twitter {
+    border-bottom: 6px solid var(--twitter);
+}
+#twitter:hover {
+    border-bottom: 2px solid var(--twitter);
+}
+#youtube {
+    border-bottom: 6px solid var(--youtube);
+}
+#youtube:hover {
+    border-bottom: 2px solid var(--youtube);
+}
+
+
+#messages {
+    border-bottom: 6px solid var(--facebook);
+}
+#messages:hover {
+    border-bottom: 2px solid var(--facebook);
+}
+#replit {
+    border-bottom: 6px solid var(--linkedin);
+}
+#replit:hover {
+    border-bottom: 2px solid var(--linkedin);
+}
+#umuc {
+    border-bottom: 6px solid var(--plex);
+}
+#umuc:hover {
+    border-bottom: 2px solid var(--plex);
+}
+#pulseway {
+    border-bottom: 6px solid var(--reddit);
+}
+#pulseway:hover {
+    border-bottom: 2px solid var(--reddit);
+}
+#icloud {
+    border-bottom: 6px solid var(--slack);
+}
+#icloud:hover {
+    border-bottom: 2px solid var(--slack);
+}
+#speedtest {
+    border-bottom: 6px solid var(--spotify);
+}
+#speedtest:hover {
+    border-bottom: 2px solid var(--spotify);
+}
+#aol {
+    border-bottom: 6px solid var(--steam);
+}
+#aol:hover {
+    border-bottom: 2px solid var(--steam);
+}
+#yahoo {
+    border-bottom: 6px solid var(--xbox);
+}
+#yahoo:hover {
+    border-bottom: 2px solid var(--xbox);
+}
+#newegg {
+    border-bottom: 6px solid var(--pinterest);
+}
+#newegg:hover {
+    border-bottom: 2px solid var(--pinterest);
+}
+#primevideo {
+    border-bottom: 6px solid var(--steam);
+}
+#primevideo:hover {
+    border-bottom: 2px solid var(--steam);
+}
+#cpanel {
+    border-bottom: 6px solid var(--xbox);
+}
+#cpanel:hover {
+    border-bottom: 2px solid var(--xbox);
+}
+#godaddy {
+    border-bottom: 6px solid var(--pinterest);
+}
+#godaddy:hover {
+    border-bottom: 2px solid var(--pinterest);
+}
+#googledevelopers {
+    border-bottom: 6px solid var(--spotify);
+}
+#googledevelopers:hover {
+    border-bottom: 2px solid var(--spotify);
+}
+
+/*
+
+messages
+Repl.it
+UMUC
+PulseWay
+iCloud
+SpeedTest
+AOL Mail
+Yahoo Mail
+Newegg
+PrimeVideo
+cPanel
+GoDaddy
+Google Developers
+
+
+
+*/
