@@ -6,29 +6,29 @@
     --amazon: #ff9900;
     --aol: #00c4ff;
     --calendar: #4285f4;
-    --cpanel: rgb(255, 108, 44);
+    --cpanel: #ff6c2c;
     --drive: #34a853;
     --facebook: #3b5998;
     --github: #6cc644;
     --gmail: #ea4335;
     --godaddy: #00A63F;
-    --icloud: #ff9900;
+    --icloud: #A3AAAE;
     --linkedin: #0077b5;
-    --messages: #34a853;
+    --messages: #0084ff;
+    --netflix: #E50914;
     --newegg: #ff9900;
     --pinterest: #bd081c;
     --plex: #e5a00d;
     --primevideo: #ff9900;
-    --pulseway: #ff9900;
+    --pulseway: #00A2E4; /* 0B9CDB */
     --reddit: #ff4500;
-    --replit: #ff9900;
-    --slack: #e01563;
+    --replit: #111C31; /* 697D85 */
     --speedtest: #ff9900;
     --spotify: #1db954;
     --steam: #00adee;
     --twitter: #1da1f2;
     --umuc: #ff9900;
-    --xbox: #52b043;
+    --xbox: #107C10;
     --yahoo: #ff9900;
     --youtube: #ff0000;
     
@@ -188,11 +188,14 @@ input, button {
     display: flex;
     align-items: flex-end;
     justify-content: flex-start;
+    color: #fff;
     background-color: rgba(255, 255, 255, .045);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .5);
+    
 }
 .tile:hover {
     background-color: rgba(255, 255, 255, .05);
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, .75);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, .75);
 }
 .tile a:focus {
     outline: thin dotted;
@@ -201,13 +204,28 @@ input, button {
     text-decoration: none;
 }
 .tile-content {
-    font-size: 12px;
+    font-size: 14px;
     text-align: left;
-    color: #fff;
 }
 .tile-content b {
-    font-size: 26px;
+    font-size: 28px;
     display: block;
+}
+.tile:hover .tile-content {
+    display: none;
+}
+.tile-icon {
+    display: none;
+    font-size: 50px;
+    align-items: center;
+    align-content: center;
+}
+.tile:hover .tile-icon {
+    display: block;
+}
+.tile:hover .no-icon {
+    display: block;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, .75);
 }
 .spacer {
     height: 150px;
@@ -222,188 +240,215 @@ input, button {
     background-color: rgba(255, 255, 255, .045);
 }
 .dropdown-container {
-    display: block;
-    flex-basis: 100%;
-    background-color: rgba(255, 255, 255, .005);
+    display: none;
+    flex-basis: 100%;  
 }
 .dropdown-content {
-    display: none;
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start; 
     align-items: flex-start;
     align-content: space-around;
     padding: 20px 10px;
-    background-color: rgba(255, 255, 255, .045);
 }
+
 
 #amazon {
     border-bottom: 6px solid var(--amazon);
 }
 #amazon:hover {
     border-bottom: 2px solid var(--amazon);
+    color: var(--amazon);
 }
 #aol {
     border-bottom: 6px solid var(--aol);
 }
 #aol:hover {
     border-bottom: 2px solid var(--aol);
+    color: var(--aol);
 }
 #calendar {
     border-bottom: 6px solid var(--calendar);
 }
 #calendar:hover {
     border-bottom: 2px solid var(--calendar);
+    color: var(--calendar);
 }
 #cpanel {
     border-bottom: 6px solid var(--cpanel);
 }
 #cpanel:hover {
     border-bottom: 2px solid var(--cpanel);
+    color: var(--cpanel);
 }
 #drive {
     border-bottom: 6px solid var(--drive);
 }
 #drive:hover {
     border-bottom: 2px solid var(--drive);
+    color: var(--drive);
 }
 #facebook {
     border-bottom: 6px solid var(--facebook);
 }
 #facebook:hover {
     border-bottom: 2px solid var(--facebook);
+    color: var(--facebook);
 }
 #github {
     border-bottom: 6px solid var(--github);
 }
 #github:hover {
     border-bottom: 2px solid var(--github);
+    color: var(--github);
 }
 #gmail {
     border-bottom: 6px solid var(--gmail);
 }
 #gmail:hover {
     border-bottom: 2px solid var(--gmail);
+    color: var(--gmail);
 }
 #godaddy {
     border-bottom: 6px solid var(--godaddy);
 }
 #godaddy:hover {
     border-bottom: 2px solid var(--godaddy);
+    color: var(--godaddy);
 }
 #icloud {
     border-bottom: 6px solid var(--icloud);
 }
 #icloud:hover {
     border-bottom: 2px solid var(--icloud);
+    color: var(--icloud);
 }
 #linkedin {
     border-bottom: 6px solid var(--linkedin);
 }
 #linkedin:hover {
     border-bottom: 2px solid var(--linkedin);
+    color: var(--linkedin);
 }
 #messages {
     border-bottom: 6px solid var(--messages);
 }
 #messages:hover {
     border-bottom: 2px solid var(--messages);
+    color: var(--messages);
+}
+#netflix{
+    border-bottom: 6px solid var(--netflix);
+}
+#netflix:hover {
+    border-bottom: 2px solid var(--netflix);
+    color: var(--netflix);
 }
 #newegg {
     border-bottom: 6px solid var(--newegg);
 }
 #newegg:hover {
     border-bottom: 2px solid var(--newegg);
+    color: var(--newegg);
 }
 #pinterest {
     border-bottom: 6px solid var(--pinterest);
 }
 #pinterest:hover {
     border-bottom: 2px solid var(--pinterest);
+    color: var(--pinterest);
 }
 #plex {
     border-bottom: 6px solid var(--plex);
 }
 #plex:hover {
     border-bottom: 2px solid var(--plex);
+    color: var(--plex);
 }
 #primevideo {
     border-bottom: 6px solid var(--primevideo);
 }
 #primevideo:hover {
     border-bottom: 2px solid var(--primevideo);
+    color: var(--primevideo);
 }
 #pulseway {
     border-bottom: 6px solid var(--pulseway);
 }
 #pulseway:hover {
     border-bottom: 2px solid var(--pulseway);
+    color: var(--pulseway);
 }
 #reddit {
     border-bottom: 6px solid var(--reddit);
 }
 #reddit:hover {
     border-bottom: 2px solid var(--reddit);
+    color: var(--reddit);
 }
 #replit {
     border-bottom: 6px solid var(--replit);
 }
 #replit:hover {
     border-bottom: 2px solid var(--replit);
-}
-#slack {
-    border-bottom: 6px solid var(--slack);
-}
-#slack:hover {
-    border-bottom: 2px solid var(--slack);
+    color: var(--replit);
 }
 #speedtest {
     border-bottom: 6px solid var(--speedtest);
 }
 #speedtest:hover {
     border-bottom: 2px solid var(--speedtest);
+    color: var(--speedtest);
 }
 #spotify {
     border-bottom: 6px solid var(--spotify);
 }
 #spotify:hover {
     border-bottom: 2px solid var(--spotify);
+    color: var(--spotify);
 }
 #steam {
     border-bottom: 6px solid var(--steam);
 }
 #steam:hover {
     border-bottom: 2px solid var(--steam);
+    color: var(--steam);
 }
 #twitter {
     border-bottom: 6px solid var(--twitter);
 }
 #twitter:hover {
     border-bottom: 2px solid var(--twitter);
+    color: var(--twitter);
 }
 #umuc {
     border-bottom: 6px solid var(--umuc);
 }
 #umuc:hover {
     border-bottom: 2px solid var(--umuc);
+    color: var(--umuc) !important;
 }
 #xbox {
     border-bottom: 6px solid var(--xbox);
 }
 #xbox:hover {
     border-bottom: 2px solid var(--xbox);
+    color: var(--xbox);
 }
 #yahoo {
     border-bottom: 6px solid var(--yahoo);
 }
 #yahoo:hover {
     border-bottom: 2px solid var(--yahoo);
+    color: var(--yahoo);
 }
 #youtube {
     border-bottom: 6px solid var(--youtube);
 }
 #youtube:hover {
     border-bottom: 2px solid var(--youtube);
+    color: var(--youtube);
 }
 
 
@@ -424,6 +469,65 @@ cPanel
 GoDaddy
 Google Developers
 
+
+
+*/
+/*
+
+fab fa-apple
+far fa-calendar-alt
+far fa-comment-dots
+fab fa-cpanel
+far fa-envelope
+fab fa-facebook
+fab fa-facebook-f
+fab fa-github
+fab fa-github-alt
+fab fa-github-square
+fab fa-google
+fab fa-google-drive
+fab fa-google-play
+far fa-hdd
+fas fa-heartbeat
+fas fa-laptop-code
+fab fa-linkedin
+fab fa-linkedin-in
+far fa-map
+fas fa-map-marked-alt
+fas fa-map-marker-alt
+fas fa-map-pin
+fas fa-music
+fab fa-napster
+fas fa-network-wired
+fas fa-pastafarianism
+fab fa-php
+fab fa-pinterest
+fab fa-pinterest-p
+fab fa-pinterest-square
+fas fa-poo-storm
+fas fa-poop
+fas fa-power-off
+fas fa-project-diagram
+fas fa-sitemap
+fab fa-python
+fab fa-raspberry-pi
+fab fa-reddit
+fab fa-reddit-alien
+fab fa-reddit-square
+fab fa-slack
+fab fa-slack-hash
+fab fa-spotify
+fab fa-steam
+fab fa-steam-square
+fab fa-steam-symbol
+fas fa-terminal
+fab fa-twitch
+fab fa-twitter
+fab fa-twitter-square
+fab fa-windows
+fab fa-yahoo	
+fab fa-youtube
+fab fa-xbox
 
 
 */
