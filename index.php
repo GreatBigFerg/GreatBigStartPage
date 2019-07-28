@@ -186,8 +186,8 @@ session_start();
 		
 		<!--  -->
 		<div class="dropdown-button tile" onclick="showItem('social')">
-			<div class="tile-content">	
-				Social
+			<div class="tile-content no-icon">	
+				Social&nbsp;<i class='fas fa-level-down-alt'></i>
 			</div>
 		</div>
 		<div id="social" class="dropdown-container">			
@@ -255,8 +255,8 @@ session_start();
 
 		<!--  -->
 		<div class="dropdown-button tile" onclick="showItem('entertainment')">
-			<div class="tile-content">		
-				Entertainment
+			<div class="tile-content no-icon">		
+				Entertainment&nbsp;<i class='fas fa-level-down-alt'></i>
 			</div>
 		</div>
 		<div id="entertainment" class="dropdown-container">			
@@ -328,8 +328,8 @@ session_start();
 
 		<!--  -->
 		<div class="dropdown-button tile" onclick="showItem('shopping')">
-			<div class="tile-content">	
-				Shopping
+			<div class="tile-content no-icon">	
+				Shopping&nbsp;<i class='fas fa-level-down-alt'></i>
 			</div>
 		</div>
 		<div id="shopping" class="dropdown-container">			

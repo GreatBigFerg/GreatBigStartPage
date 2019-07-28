@@ -191,7 +191,6 @@ input, button {
     color: #fff;
     background-color: rgba(255, 255, 255, .045);
     box-shadow: 1px 1px 5px rgba(0, 0, 0, .5);
-    
 }
 .tile:hover {
     background-color: rgba(255, 255, 255, .05);
@@ -230,6 +229,14 @@ input, button {
 .spacer {
     height: 150px;
     width: 75px;
+    margin: 5px;
+    margin-bottom: 45px;
+    background-color: rgba(255, 255, 255, .045);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .5);
+}
+.spacer:hover {
+    background-color: rgba(255, 255, 255, .045);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .5);
 }
 .dropdown-button {
     height: 150px;
