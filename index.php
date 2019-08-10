@@ -42,7 +42,7 @@ session_start();
 				<b></b>
 				
 			</div>
-		</a>
+		</a>  
 
 		<!--  -->
 		<a id="drive" href="https://drive.google.com/drive/u/0/my-drive" target="_blank" class="tile">
@@ -184,7 +184,7 @@ session_start();
 			</div>
 		</a>
 		
-		<!--  -->
+		<!--  
 		<div class="dropdown-button tile" onclick="showItem('social')">
 			<div class="tile-content no-icon">	
 				Social&nbsp;<i class='fas fa-level-down-alt'></i>
@@ -192,8 +192,11 @@ session_start();
 		</div>
 		<div id="social" class="dropdown-container">			
 			<div class="dropdown-content">
-				<!--  -->
-				<a id="reddit" href="https://www.reddit.com/" target="_blank" class="tile">
+				
+			</div>
+		</div>-->
+		<!--  -->
+		<a id="reddit" href="https://www.reddit.com/" target="_blank" class="tile">
 					<div class="tile-content">
 						<b>R</b>
 						Reddit
@@ -242,8 +245,6 @@ session_start();
 						<i class='fab fa-pinterest'></i>
 					</div>
 				</a>
-			</div>
-		</div>
 
 		<!--  -->
 		<a id="" href="" class="tile spacer">
