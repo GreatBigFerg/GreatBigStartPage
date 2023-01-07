@@ -94,7 +94,7 @@ session_start();
 		<!--  -->
 		<a id="aol" href="https://login.aol.com" target="_blank" class="tile">
 			<div class="tile-content no-icon">
-				<b>Ao</b>
+				<b>AOL</b>
 				AOL Mail
 			</div>
 		</a>
